@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class DiningHall extends AppCompatActivity {
     private String name;
-    private food[] foodItems;
+    private Food[] foodItems;
     private int[][] timings;
     private double ratings;
 
@@ -16,7 +16,7 @@ public class DiningHall extends AppCompatActivity {
         setContentView(R.layout.activity_dining_hall);
     }
 
-    public DiningHall(String name, food[] foodItems, int[][] timings, double ratings) {
+    public DiningHall(String name, Food[] foodItems, int[][] timings, double ratings) {
         this.name = name;
         this.foodItems = foodItems;
         this.timings = timings;
@@ -31,11 +31,11 @@ public class DiningHall extends AppCompatActivity {
         this.name = name;
     }
 
-    public food[] getFoodItems() {
+    public Food[] getFoodItems() {
         return foodItems;
     }
 
-    public void setFoodItems(food[] foodItems) {
+    public void setFoodItems(Food[] foodItems) {
         this.foodItems = foodItems;
     }
 
